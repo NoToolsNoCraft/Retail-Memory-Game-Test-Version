@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:title" content="Pepco Memory Game" />
+	<meta property="og:description" content="Find the pair of each Pepco item" />
+	<meta property="og:image" content="https://pepco-memory-game-test-production.up.railway.app/pepcoThumbnail.webp" />
+	<meta property="og:url" content="https://pepco-memory-game-test-production.up.railway.app/" />
+	<meta property="og:type" content="website" />
+
+	<title>Random Brand Memory Game</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="container">
+		<img src="brand.webp" alt="Your Logo" class="logo">
+		
+		
+		<div class = "dashboard">
+			<div class="dashboard-element">
+				<i class=" dashboard-icon fas fa-stopwatch"></i> <span id="timer"></span>
+			</div>
+			<div class="dashboard-element">
+				<i class=" dashboard-icon fas fa-clone"></i> <span id="moves"></span>
+			</div>
+			<div class="dashboard-element">
+				<i id = "reset" class="fas fa-redo-alt"></i> <span id="reset"></span>
+			</div>
+
+			
+		</div>
+		<div id="stars">
+			<i class="fas fa-star" id="rating-poor"></i>
+			<i class="fas fa-star" id="rating-average"></i>
+			<i class="fas fa-star" id="rating-perfect"></i>
+		</div>
+			
+		<div id="form">
+            <input type="radio" id="type1Mode"
+                   name="difficulty" value="type1" checked="checked">
+            <label class="checked" for="type1Mode">Kids</label>
+
+            <input type="radio" id="type2Mode"
+                   name="difficulty" value="type2">
+            <label for="type2Mode">Adults</label>
+
+			<input type="radio" id="type3Mode"
+				name="difficulty" value="type3">
+			<label for="type3Mode">Third</label>
+        </div>
+
+		<div class="game-board">
+		</div>
+
+		
+		
+	</div>
+	
+	<div class="modal hide">
+		<div class="modal-inner">
+			<h3>Phenomenally done!</h3>
+			<p class="modal-text">You solved the game in <span id="final-time"></span> seconds and <span id="final-moves"></span> moves!</p>
+			<p class="modal-text" id="final-rating"></p>
+			<p class="modal-text" id="replay"> <i class="fas fa-redo-alt"></i> Wanna play again?</p>
+			<button id="copyResultsButton">Copy the result and send it to your friend!</button>
+				<div class="share-buttons">
+					<p>Share the results with your friends:</p>
+					<a id="shareFacebook" class="share-btn fb" target="_blank">📘 Facebook</a>
+					<a id="shareWhatsApp" class="share-btn wa" target="_blank">📱 WhatsApp</a>
+					<a id="shareViber" class="share-btn vb" target="_blank">📩 Viber</a>
+					<a id="shareTelegram" class="share-btn tg" target="_blank">🚀 Telegram</a>
+				</div>
+		</div>
+		
+	</div>
+
+	
+	
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
