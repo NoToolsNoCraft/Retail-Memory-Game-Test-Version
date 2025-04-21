@@ -1,0 +1,20 @@
+<style>
+  .responsive-memory-game {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    height: 100vh; /* Default for desktop */
+  }
+
+  @media (max-width: 500px) {
+    .responsive-memory-game {
+      height: 550px; /* Height for mobile devices */
+    }
+  }
+</style>
+
+<iframe 
+  src="https://notoolsnocraft.github.io/Retail-Memory-Game-Test-Version/" 
+  class="responsive-memory-game" 
+  allowfullscreen>
+</iframe>
